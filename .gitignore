@@ -2,4 +2,4 @@ virtual/
 __pycache__
 *.pyc
 instance/
-idea/
+idea/.idea/*
