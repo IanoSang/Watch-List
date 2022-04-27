@@ -1,4 +1,4 @@
 virtual/
-__bycache__
+__pycache__
 *.pyc
 instance/
