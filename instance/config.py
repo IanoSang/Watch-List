@@ -1,0 +1,3 @@
+MOVIE_API_KEY = 'fd47851613cb72a8e1bb2ec2807a27d2'
+
+
