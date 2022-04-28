@@ -19,12 +19,13 @@
 
 </div>
 <div class="row">
-
+<div class="div">
 <!-- Popular movie -->
 <h3> Popular Movies</h3>
 <ul>
     {{ macro.displayMovieList(popular)}}
 </ul>
+</div>
 <!-- Upcoming movie  -->
 <h3> Upcoming Movies </h3>
 <ul>
@@ -36,5 +37,6 @@
     {{ macro.displayMovieList(now_showing)}}
 </ul>
 
-</div>
+
 {% endblock%}
+    </div>
