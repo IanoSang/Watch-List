@@ -1,7 +1,6 @@
-from flask import render_template
+from flask import render_template, request, redirect, url_for
 from app import app
 from .request import get_movies, get_movie, search_movie
-from flask import render_template, request, redirect, url_for
 
 
 # Views
@@ -38,11 +37,11 @@ def movie(id):
 
 @app.route('/search/<movie_name>')
 def search(movie_name):
-    '''
+    """
     View function to display the search results
-    '''
+    """
     movie_name_list = movie_name.split(" ")
     movie_name_format = "+".join(movie_name_list)
     searched_movies = search_movie(movie_name_format)
     title = f'search results for {movie_name}'
-    return render_template('search.html', movies=searched_movies)
+    return render_template('search.html',movies = searched_movies)
